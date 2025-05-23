@@ -43,11 +43,11 @@
   </head>
 
   <body>
-    <!-- AR.js Scene -->
-    <a-scene embedded arjs>
-      <!-- Replace this -->
-      <!-- with this -->
-      <a-marker id="marker" type="pattern" url="my-marker.patt">
+     <!-- AR.js Scene -->
+      <a-scene embedded arjs>
+      <!-- Marker for tracking (e.g., Hiro marker) -->
+      <a-marker id="marker" preset="hiro">
+        <!-- Empty 3D object used to track marker position -->
         <a-box visible="false"></a-box>
       </a-marker>
       
